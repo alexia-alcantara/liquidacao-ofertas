@@ -8,7 +8,7 @@ function ListaOfertas() {
   useEffect(() => {
     axios.get("https://66d62a1ef5859a704268886b.mockapi.io/api/v1/oferta")
       .then(response => setOffers(response.data))
-      .catch(error => console.error("Erro ao carregar as ofertas:", error));
+      .catch(err => console.err("Erro ao carregar as ofertas:", err));
   }, []);
 
   return (

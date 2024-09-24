@@ -11,7 +11,7 @@ function OfertaInfo() {
               <div className="bg-[#f5f7f9] border border-gray-300 rounded-l-lg p-2 h-12 flex items-center mb-2 md:mb-0 md:rounded-l-lg"> {/* Estilo da div de pagamento válido */}
                   <p className="text-gray-700 text-sm md:text-base">Pagamento válido até: <strong>24/04/2024</strong></p>
               </div>
-              <div className="bg-[#015047] rounded-r-lg p-2 h-12 flex items-center"> {/* Estilo da div de valor */}
+              <div className="bg-[#015047] rounded-r-lg p-2 h-12 flex items-center">
                   <p className="text-white text-sm md:text-base">Valor: <strong>R$ 15.000</strong></p>
               </div>
           </div>
