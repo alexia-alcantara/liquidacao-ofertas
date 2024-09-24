@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Sidebar from './components/Sidebar/Sidebar';
+import OfertaInfo from './components/OfertaInfo/OfertaInfo';
+import DadosBancarios from './components/DadosBancarios/DadosBancarios';
+import ConsideracoesImportantes from './components/Consideracoes/ConsideracoesImportantes';
+import UploadComprovante from './components/Upload/UploadComprovante';
+import Contato from './components/Contato/Contato';
+import ListaOfertas from './components/ListaOfertas/ListaOfertas';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen bg-gray-50 flex">
+      <Sidebar />
+      <main className="flex-1 p-6">
+        <OfertaInfo />
+        <DadosBancarios />
+        <ConsideracoesImportantes />
+        <UploadComprovante />
+        <Contato />
+        <ListaOfertas/>
+      </main>
     </div>
   );
 }
